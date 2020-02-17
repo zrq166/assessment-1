@@ -1,0 +1,42 @@
+body{
+    background-image: url("../images/background.jpeg");
+    font-family: "Times New Roman", Times;
+}
+h1 {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+img{
+    width: 125px;
+    margin-bottom: 10px;
+    /*Your code here*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div{
+    padding: 25px;
+    margin:5px;
+    /* YOUR CODE HERE */
+    text-align: center;
+}
+section{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+
+@media all and (min-width: 800px) {
+    section{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    div:nth-child(odd) {
+        border:1px solid black ;
+    }
+}
